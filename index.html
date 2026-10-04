@@ -1,0 +1,1458 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#17202a">
+<title>Mohan Family Investment V52</title>
+<style>
+:root{--navy:#0b1736;--navy2:#132650;--blue:#3b82f6;--cyan:#22d3ee;--bg:#eef3f9;--card:#fff;--text:#14213d;--muted:#718096;--border:#dfe7f1;--green:#15803d;--greenbg:#eaf8ef;--red:#c2413b;--redbg:#fff0ef;--amber:#b7791f;--amberbg:#fff8e8}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text)}
+header{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:18px 16px;border:0}
+.brand{max-width:960px;margin:auto;display:flex;justify-content:space-between;align-items:center}.brand h1{font-size:20px;margin:0;font-weight:800}.brand .sub{font-size:11px;color:#b9c7e6;margin-top:4px}
+main{max-width:960px;margin:auto;padding:14px 14px 104px}.hero{background:linear-gradient(135deg,#0b1736 0%,#1c3b78 62%,#2563eb 100%);color:#fff;border-radius:22px;padding:20px;margin:-2px 0 14px;box-shadow:0 12px 30px #13265035;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:170px;height:170px;border-radius:50%;right:-55px;top:-75px;background:#22d3ee22}.hero .small{color:#bcd0f4;letter-spacing:.6px}.hero .big{font-size:32px;font-weight:850;margin:5px 0}.hero .pl{font-size:13px;font-weight:650}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.card{background:var(--card);border:1px solid var(--border);border-radius:17px;padding:15px;margin-bottom:12px;box-shadow:0 4px 14px #14213d0b}
+.metric{font-size:20px;font-weight:800;margin-top:5px}.small{font-size:11px;color:var(--muted)}
+.kpi{background:#f8fbff;border:1px solid #e3ebf5;border-radius:13px;padding:11px}.kpi.green{background:var(--greenbg);border-color:#d6f0df}.kpi.amber{background:var(--amberbg);border-color:#f7e7bd}
+label{font-size:12px;color:#59677b;display:block;margin:10px 0 4px}input,select,button{width:100%;padding:12px;border:1px solid #d5deea;border-radius:11px;font-size:14px;background:#fff;color:var(--text)}button{background:var(--blue);color:#fff;border:0;margin-top:10px;font-weight:700}.secondary{background:#e9eff7;color:#263752}
+.tabs{display:flex;gap:7px;overflow:auto;margin:12px 0;position:sticky;top:0;background:var(--bg);padding:6px 0;z-index:4}.tabs button{white-space:nowrap;width:auto;margin:0;background:#fff;color:#52627a;border:1px solid var(--border)}.tabs .active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.row{display:flex;justify-content:space-between;gap:10px;align-items:center}.pill{padding:5px 9px;border-radius:99px;background:#eaf2ff;color:#2563eb;font-size:11px;font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:10px 5px;border-bottom:1px solid #edf1f6}th{color:var(--muted)}tr:last-child td{border-bottom:0}
+.profit{color:var(--green);font-weight:750}.loss{color:var(--red);font-weight:750}.hide{display:none}.actions button{width:auto;padding:6px 8px;margin:0;font-size:11px}
+.section-title{font-size:16px;font-weight:850;margin:3px 0 11px}.type-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.type-card{padding:12px;border-radius:13px;background:#f7f9fc;border:1px solid var(--border)}.type-card b{display:block;font-size:13px}.type-card span{font-size:12px;color:var(--muted)}
+.bottom{position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-top:1px solid var(--border);display:flex;justify-content:center;z-index:10}.bottom-inner{max-width:960px;width:100%;display:grid;grid-template-columns:repeat(5,1fr)}.bottom button{background:transparent;color:#6a7890;border-radius:0;margin:0;padding:10px 4px;font-size:11px;min-height:58px;touch-action:manipulation}.bottom button.active{color:var(--blue);background:#eef5ff}
+@media(min-width:700px){.grid{grid-template-columns:repeat(4,1fr)}.bottom{display:none}}
+<style>
+.brand-logo{display:flex;align-items:center;gap:11px}
+.brand-mark{
+  width:40px;height:40px;border-radius:13px;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,#39a0ff,#20c7c9);
+  color:#fff;font-size:22px;font-weight:900;
+  box-shadow:0 7px 18px rgba(24,183,216,.25);
+  border:1px solid rgba(255,255,255,.22)
+}
+.brand h1{letter-spacing:.1px}
+.brand h1 span{font-weight:650;color:#dce9ff}
+.brand .sub{letter-spacing:.35px}
+@media(max-width:420px){
+  .brand-mark{width:36px;height:36px;border-radius:11px;font-size:20px}
+  .brand-logo{gap:9px}
+  .brand h1{font-size:17px}
+  .brand h1 span{display:block;font-size:15px;margin-top:1px}
+  .brand .sub{font-size:9px}
+  header{padding:14px 13px}
+}
+<style>
+/* V12 - softer premium portfolio background */
+body{
+  background:
+    radial-gradient(circle at 8% 12%, rgba(69,137,220,.10), transparent 28%),
+    radial-gradient(circle at 92% 38%, rgba(47,115,230,.08), transparent 30%),
+    linear-gradient(180deg,#e8f0fa 0%,#f2f6fb 48%,#e9f1f9 100%);
+}
+main{background:transparent}
+.portfolio-area{
+  background:linear-gradient(145deg,#e5eef9 0%,#eef4fb 55%,#e1ecf8 100%);
+  border:1px solid #d5e2f0;
+  border-radius:24px;
+  padding:12px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.8);
+}
+.portfolio-area .card{
+  box-shadow:0 5px 16px rgba(31,61,102,.07);
+}
+.type-card{
+  background:linear-gradient(145deg,#f9fbff,#edf4fc);
+}
+@media(max-width:699px){
+  main{padding-left:10px;padding-right:10px}
+  .portfolio-area{padding:8px;border-radius:22px}
+}
+
+<style>
+.payout-tools{margin-top:8px;padding:9px 10px;background:#f3f8ff;border:1px solid #dce9f7;border-radius:12px}
+.payout-status{display:inline-block;padding:3px 7px;border-radius:999px;font-size:10px;font-weight:800}
+.payout-status.pending{background:#fff4db;color:#9a6500}
+.payout-status.received{background:#e5f8ed;color:#08783d}
+.payout-received{font-size:11px;color:#08783d;margin-top:3px}
+.payout-btn{font-size:11px!important;padding:6px 9px!important;margin-top:5px!important}
+.schedule-row{align-items:flex-start!important}
+ .payout-btn{font-size:11px!important;padding:6px 9px!important;margin-top:5px!important}.payout-status{display:inline-block;padding:3px 7px;border-radius:999px;font-size:10px;font-weight:800}.payout-status.pending{background:#fff4db;color:#9a6500}.payout-status.received{background:#e5f8ed;color:#08783d}.payout-received{font-size:11px;color:#08783d;margin-top:3px}
+.home-only{display:block}
+
+/* V27 - professional payouts dashboard */
+.payout-filterbar{display:grid;grid-template-columns:1fr 145px 145px;gap:10px;align-items:center;margin-bottom:12px}
+.payout-filterbar>div{display:flex;flex-direction:column;gap:3px}.payout-filterbar>div span{font-size:11px;color:var(--muted)}
+.payout-filterbar select{padding:10px;font-size:12px;margin:0;background:#fff}
+.payout-summary-grid{grid-template-columns:repeat(4,1fr);margin-bottom:12px}
+.payout-summary-grid .kpi{margin:0;min-height:76px}
+.next-payout{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 14px;margin-bottom:12px;border-radius:15px;background:linear-gradient(135deg,#f4f9ff,#edf5ff);border:1px solid #dce9f7}
+.next-payout>div:first-child{display:flex;flex-direction:column;gap:3px}.next-payout span{font-size:10px;color:#718096}.next-payout b{font-size:14px;color:#17365d}.next-payout small{font-size:10px;color:#718096}
+.next-stats{display:flex;gap:12px;font-size:10px;color:#718096}.next-stats b{font-size:12px;color:#243a55}
+.payout-status.due{background:var(--redbg);color:var(--red)}.payout-status.received{background:var(--greenbg);color:var(--green)}
+.payout-card .pill{white-space:nowrap}.payout-line{border-radius:10px}.payout-line.payout-due{background:#fffaf9}.payout-line.payout-upcoming{background:#fbfdff}
+@media(max-width:620px){.payout-filterbar{grid-template-columns:1fr 1fr}.payout-filterbar>div{grid-column:1/-1}.payout-summary-grid{grid-template-columns:1fr 1fr}.next-payout{align-items:flex-start;flex-direction:column}.next-stats{width:100%;justify-content:space-between}.payout-filterbar select{width:100%}}
+/* V20 Professional Portfolio Dashboard */
+.professional-home{padding:0 0 26px;background:#f4f7fb}
+.home-header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 4px 16px}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:1.6px;color:#3978c9;margin-bottom:5px}
+.home-header h1{margin:0;font-size:25px;letter-spacing:-.5px;color:#10243f}
+.home-date{font-size:12px;color:#7b899c;margin-top:5px}
+.home-filter{border:1px solid #d8e3f1;background:#fff;border-radius:22px;padding:9px 13px;color:#315f93;font-weight:700;box-shadow:0 4px 12px rgba(31,64,104,.06)}
+.wealth-card{position:relative;overflow:hidden;border-radius:25px;padding:24px 22px;min-height:126px;display:flex;align-items:center;background:linear-gradient(135deg,#102b58 0%,#1556a4 58%,#1479df 100%);box-shadow:0 14px 30px rgba(18,65,120,.18);color:#fff}
+.wealth-label{font-size:11px;letter-spacing:1.5px;opacity:.78;font-weight:700}
+.wealth-value{font-size:35px;font-weight:850;letter-spacing:-1.2px;margin:5px 0 3px}
+.wealth-profit{font-size:14px;font-weight:750}
+.wealth-orb{position:absolute;width:190px;height:190px;border-radius:50%;right:-54px;top:-88px;background:rgba(255,255,255,.10);box-shadow:inset 0 0 45px rgba(255,255,255,.08)}
+.home-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.stat-card{position:relative;background:#fff;border:1px solid #e1e8f1;border-radius:18px;padding:16px;min-height:83px;box-shadow:0 5px 18px rgba(34,63,96,.05)}
+.stat-icon{position:absolute;right:13px;top:12px;font-size:18px;opacity:.9}
+.stat-label{font-size:12px;color:#7c8999;margin-bottom:7px}
+.stat-value{font-size:21px;font-weight:800;color:#142a47}
+.home-panel{margin-top:14px;background:#fff;border:1px solid #e1e8f1;border-radius:20px;padding:18px;box-shadow:0 5px 18px rgba(34,63,96,.045)}
+.panel-title-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
+.home-panel h2{font-size:17px;margin:0;color:#172d4a}
+.panel-subtitle{font-size:11px;color:#8793a3;display:block;margin-top:4px}
+.mini-action{border:0;background:#edf5ff;color:#2472c9;border-radius:16px;padding:8px 10px;font-size:11px;font-weight:800}
+.allocation-list{display:flex;flex-direction:column;gap:13px}
+.alloc-row{display:grid;grid-template-columns:32px 1fr auto;align-items:center;gap:9px}
+.alloc-icon{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:#edf4fb}
+.alloc-name{font-size:13px;font-weight:750;color:#243a55}
+.alloc-bar-wrap{height:5px;background:#edf1f6;border-radius:10px;margin-top:5px;overflow:hidden}
+.alloc-bar{height:100%;border-radius:10px;background:linear-gradient(90deg,#2879d5,#55a2ee)}
+.alloc-value{font-size:13px;font-weight:800;color:#243a55}
+.income-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.income-box{background:#f7f9fc;border:1px solid #e8edf3;border-radius:14px;padding:13px}
+.income-box span{display:block;font-size:11px;color:#8490a0;margin-bottom:5px}
+.income-box strong{font-size:17px;color:#19314e}
+.quick-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.quick-actions button{border:1px solid #dce6f1;background:#f8fbff;border-radius:13px;padding:12px 9px;color:#1d4775;font-weight:750;font-size:12px;text-align:left}
+.quick-actions button:first-letter{font-size:15px}
+@media(max-width:390px){.home-header h1{font-size:22px}.wealth-value{font-size:31px}.home-filter{font-size:11px}.stat-card{padding:14px}.home-panel{padding:15px}}
+
+/* V21 fixes */
+.portfolio-area{background:#f8fbff}
+.portfolio-empty{padding:24px;text-align:center;color:#7c8999}
+.home-header h1{font-size:20px;letter-spacing:-.2px}
+/* V26: clear profit/loss colours */
+.profit-text{color:#168a4a!important}
+.loss-text{color:#d83b3b!important}
+.wealth-profit.profit-text{color:#168a4a!important}
+.wealth-profit.loss-text{color:#d83b3b!important}
+</style>
+</style><style>
+/* Mobile investment-card readability */
+@media(max-width:699px){
+  .portfolio-table-wrap{overflow:visible!important}
+  .portfolio-table{display:block}
+  .portfolio-table thead{display:none}
+  .portfolio-table tbody,.portfolio-table tr{display:block;width:100%}
+  .portfolio-table tr{
+    background:#f9fbff;border:1px solid #dce6f2;border-radius:16px;
+    margin:0 0 12px;padding:12px;box-shadow:0 4px 12px rgba(20,42,75,.06)
+  }
+  .portfolio-table td{
+    display:block;border:0!important;padding:2px 0!important;text-align:left!important
+  }
+  .portfolio-table td:nth-child(1){font-size:16px;font-weight:850;color:#13213d;padding-bottom:7px!important}
+  .portfolio-table td:nth-child(1)::after{content:""}
+  .portfolio-table td:nth-child(2){
+    display:inline-block;width:45%;font-size:12px;color:#6f7c91;
+    padding-bottom:7px!important
+  }
+  .portfolio-table td:nth-child(3),
+  .portfolio-table td:nth-child(4),
+  .portfolio-table td:nth-child(5){
+    display:inline-block;vertical-align:top;width:31.8%;
+    background:#fff;border:1px solid #e3eaf3!important;border-radius:10px;
+    padding:8px!important;margin:4px 1% 4px 0;font-size:13px;font-weight:750
+  }
+  .portfolio-table td:nth-child(3)::before{content:"Invested";display:block;font-size:10px;color:#7b8798;font-weight:500;margin-bottom:2px}
+  .portfolio-table td:nth-child(4)::before{content:"Current";display:block;font-size:10px;color:#7b8798;font-weight:500;margin-bottom:2px}
+  .portfolio-table td:nth-child(5)::before{content:"P/L";display:block;font-size:10px;color:#7b8798;font-weight:500;margin-bottom:2px}
+  .portfolio-table td:nth-child(6){
+    display:block!important;padding-top:6px!important;margin-top:4px;
+    border-top:1px dashed #dce5ef!important;font-size:12px!important;
+    color:#66758a;line-height:1.55
+  }
+  .portfolio-table td:nth-child(7){
+    display:flex!important;gap:7px;padding-top:8px!important
+  }
+  .portfolio-table td:nth-child(7) button{flex:1;margin:0!important;padding:8px!important}
+  .bond-summary{
+    background:#eef6ff;border:1px solid #d6e7fa;border-radius:13px;
+    padding:10px 11px!important;font-size:12px!important;line-height:1.55
+  }
+  .portfolio-heading{margin-bottom:8px!important}
+}
+
+.bond-schedule{margin-top:10px;padding:10px 0;border-top:1px dashed #d9e2ee}
+.schedule-title{font-weight:800;color:#20304b;margin-bottom:5px;font-size:13px}
+.schedule-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid #e7edf4}
+.schedule-row div{min-width:0}
+.schedule-row span,.schedule-row small{display:block;color:#77869a;font-size:11px;margin-top:2px}
+.schedule-row strong{white-space:nowrap;font-size:15px}
+.interest-pay{color:#00855a}.maturity-pay{color:#a36b18}
+.schedule-note{font-size:11px;color:#6f7d90;background:#f3f7fb;border-radius:9px;padding:7px 8px;margin-top:6px;line-height:1.45}
+.schedule-total{display:flex;justify-content:space-between;align-items:center;padding-top:10px;font-size:12px;color:#53657c}
+.schedule-total b{font-size:15px;color:#13213d}
+@media(max-width:699px){
+ .bond-schedule{margin-top:9px}
+ .schedule-row{padding:8px 0}
+ .schedule-row strong{font-size:14px}
+}
+</style>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+<style>
+.family-member-card{background:linear-gradient(145deg,#f9fbff,#eef5fc);border:1px solid #dce7f3;border-radius:16px;padding:13px;margin-bottom:10px}
+.family-member-card .name{font-size:16px;font-weight:850}
+.family-member-card .amount{font-size:20px;font-weight:850;margin-top:3px}
+.family-member-card .meta{font-size:11px;color:#718096;margin-top:3px}
+.family-member-card .mini{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin-top:10px}
+.family-member-card .mini div{background:#fff;border:1px solid #e4ebf3;border-radius:10px;padding:8px}
+.family-member-card .mini span{display:block;font-size:10px;color:#7b8797}
+.family-member-card .mini b{font-size:13px}
+.family-member-card .member-actions{margin-top:10px}
+.family-member-card button{width:auto;padding:7px 10px;margin:0;font-size:11px}
+.family-total{background:linear-gradient(145deg,#0b1736,#1d4f9a);color:#fff;border:0}
+.family-total .small{color:#c8d8f5}
+.family-total .metric{color:#fff}.maturity-breakdown{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:9px}.maturity-breakdown>div{background:rgba(255,255,255,.10);border-radius:10px;padding:7px}.maturity-breakdown span{display:block;font-size:9px;color:#c8d8f5}.maturity-breakdown b{display:block;font-size:12px;color:#fff;margin-top:2px}@media(max-width:430px){.maturity-breakdown{grid-template-columns:1fr 1fr}.maturity-breakdown>div:last-child{grid-column:1/-1}}
+@media(min-width:700px){.family-member-card .mini{grid-template-columns:repeat(4,1fr)}}
+</style>
+
+<style>
+.family-income-card{background:#fff;border:1px solid #dfe7f1;border-radius:17px;padding:15px;margin-bottom:12px;box-shadow:0 4px 14px #14213d0b}
+.family-income-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+.family-income-title{font-size:16px;font-weight:850}.family-income-sub{font-size:11px;color:#718096;margin-top:3px}
+.family-income-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.family-income-grid .kpi{padding:10px}.family-income-grid .metric{font-size:17px}
+.family-next{margin-top:10px;padding:10px 12px;border-radius:12px;background:#eef6ff;border:1px solid #d8e9fb;font-size:12px}
+.family-next b{display:block;font-size:13px;margin-top:3px}
+@media(min-width:700px){.family-income-grid{grid-template-columns:repeat(4,1fr)}}
+</style>
+
+<style>
+/* V35 Safe: investment detail overlay */
+.investment-overlay{
+  position:fixed;inset:0;background:rgba(7,18,40,.58);
+  display:flex;align-items:flex-end;justify-content:center;
+  padding:14px;z-index:1000;
+}
+.investment-overlay.hide{display:none}
+.investment-sheet{
+  width:min(680px,100%);max-height:86vh;overflow:auto;
+  background:#fff;border-radius:24px 24px 18px 18px;
+  box-shadow:0 22px 60px rgba(0,0,0,.28);padding:20px;
+}
+.investment-sheet h2{margin:0;font-size:23px}
+.detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:14px 0}
+.detail-box{background:#f7faff;border:1px solid #e2eaf4;border-radius:14px;padding:12px}
+.detail-box span{display:block;color:#718096;font-size:12px}
+.detail-box b{display:block;margin-top:4px;font-size:17px}
+.detail-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.detail-actions button{margin:0}
+@media(max-width:480px){
+  .detail-grid{grid-template-columns:1fr 1fr}
+  .investment-sheet{padding:17px}
+}
+</style>
+
+
+<style>
+#livePLPreview{background:#f7faff;border:1px solid #e1eaf5;border-radius:14px}
+#livePLValue.profit{color:#16803b}
+#livePLValue.loss{color:#c62828}
+</style>
+
+
+<style id="v48-header-style">
+header{background:linear-gradient(135deg,#092a55 0%,#0d3970 55%,#124b83 100%);box-shadow:0 5px 18px rgba(9,42,85,.18);}
+.brand{padding:22px 18px 20px;}
+.brand-logo{display:flex;align-items:center;gap:13px;}
+.brand-mark{width:54px;height:54px;border-radius:17px;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:800;color:#fff;background:linear-gradient(145deg,#16b8e8,#1687d9);box-shadow:0 7px 18px rgba(0,0,0,.18),inset 0 1px 0 rgba(255,255,255,.25);border:1px solid rgba(255,255,255,.22);}
+.brand-logo h1{margin:0;color:#fff;font-size:24px;line-height:1.08;font-weight:800;letter-spacing:-.3px;}
+.brand-logo h1 span{display:block;font-size:18px;font-weight:650;margin-top:3px;color:#dbeafe;letter-spacing:0;}
+.brand-logo .sub{margin-top:7px;color:#a9c7e8;font-size:12px;letter-spacing:.2px;}
+@media(max-width:480px){.brand{padding:19px 16px 18px}.brand-mark{width:50px;height:50px;border-radius:15px;font-size:28px}.brand-logo h1{font-size:22px}.brand-logo h1 span{font-size:17px}}
+</style>
+
+<style>
+.portfolio-value-summary{margin:12px 0 14px;padding:14px;background:#f7fbff;border:1px solid #dce8f4;border-radius:17px}
+.pv50-title-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
+.pv50-title{font-size:17px;font-weight:850;color:#102b49}
+.pv50-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.pv50-card{background:#fff;border:1px solid #e2eaf3;border-radius:14px;padding:12px;min-width:0}.pv50-card.pl-card.profit-bg{background:var(--greenbg)}.pv50-card.pl-card.loss-bg{background:var(--redbg)}
+.pv50-label{font-size:11px;color:#748092}
+.pv50-value{font-size:20px;font-weight:850;color:#102b49;margin-top:4px}.pv50-value.profit{color:var(--green)}.pv50-value.loss{color:var(--red)}
+.pv50-member-heading{font-size:13px;font-weight:800;color:#29425f;margin:14px 0 6px}
+.pv50-member{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-top:1px solid #e7eef5}
+.pv50-name{font-size:12px;font-weight:800;color:#183653}
+.pv50-small{font-size:10px;color:#7c8795;margin-top:2px}
+.pv50-values{display:grid;grid-template-columns:repeat(3,auto);gap:8px;text-align:right}
+.pv50-values b{font-size:12px;color:#183653}
+@media(max-width:430px){.pv50-grid{grid-template-columns:1fr 1fr;gap:7px}.pv50-card.pl-card{grid-column:1 / -1}.pv50-value{font-size:18px}.pv50-member{align-items:center}.pv50-values{grid-template-columns:repeat(3,auto);gap:5px}}
+</style>
+
+<style>
+#loginGate{position:fixed;inset:0;z-index:99999;background:linear-gradient(145deg,#081633,#17366d);display:flex;align-items:center;justify-content:center;padding:22px}#loginGate.hide{display:none}.login-box{width:min(420px,100%);background:#fff;border-radius:24px;padding:28px 22px;box-shadow:0 25px 70px rgba(0,0,0,.28)}.login-brand{display:flex;align-items:center;gap:12px;margin-bottom:20px}.login-mark{width:48px;height:48px;border-radius:15px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#39a0ff,#20c7c9);color:#fff;font-size:25px;font-weight:900}.login-box h2{margin:0;color:#14213d;font-size:25px}.login-box .sub{color:#718096;font-size:12px;margin-top:3px}.login-box input{margin-bottom:4px}.login-error{min-height:17px;color:#c2413b;font-size:11px;font-weight:700;margin-top:6px}.login-help{font-size:10px;color:#718096;line-height:1.45;margin-top:12px}.logout-btn{width:auto;margin:0;padding:7px 10px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);font-size:11px}@media(max-width:420px){.login-box{padding:24px 18px;border-radius:20px}}
+</style>
+</head>
+<body>
+<div id="loginGate">
+  <div class="login-box">
+    <div class="login-brand"><div class="login-mark">₹</div><div><h2>Mohan Family Investment</h2><div class="sub">Secure portfolio access</div></div></div>
+    <div id="loginFormWrap">
+      <label>Username</label><input id="loginUser" autocomplete="username" placeholder="Enter username">
+      <label>Password</label><input id="loginPass" type="password" autocomplete="current-password" placeholder="Enter password">
+      <button id="loginBtn">Login</button>
+      <div id="loginError" class="login-error"></div>
+      <div class="login-help">First time? Use <b>Setup Login</b> to create your username and password. Your existing portfolio data will not be changed.</div>
+      <button id="setupLoginBtn" class="secondary">Setup / Change Login</button>
+    </div>
+    <div id="setupFormWrap" class="hide">
+      <label>New username</label><input id="setupUser" autocomplete="username" placeholder="Choose username">
+      <label>New password</label><input id="setupPass" type="password" autocomplete="new-password" placeholder="Choose password">
+      <label>Confirm password</label><input id="setupPass2" type="password" autocomplete="new-password" placeholder="Repeat password">
+      <button id="saveLoginBtn">Save Login</button>
+      <button id="cancelSetupBtn" class="secondary">Back to Login</button>
+      <div id="setupError" class="login-error"></div>
+    </div>
+  </div>
+</div>
+
+<header><div class="brand">
+  <div class="brand-logo">
+    <div class="brand-mark">₹</div>
+    <div>
+      <h1>Mohan <span>Family Investment</span></h1>
+      <div class="sub">Smart • Simple • Secure Portfolio</div>
+    </div>
+  </div>
+  <button id="logoutBtn" class="logout-btn">Logout</button>
+</div></header>
+<main>
+
+<section id="home" class="professional-home">
+  <div class="wealth-card">
+    <div>
+      <div class="wealth-label">TOTAL PORTFOLIO VALUE</div>
+      <div class="wealth-value" id="homeTotalValue">₹0</div>
+      <div class="wealth-profit" id="homeProfit">▲ ₹0 Profit</div>
+    </div>
+    <div class="wealth-orb"></div>
+  </div>
+
+  <div class="home-grid-2">
+    <div class="stat-card">
+      <span class="stat-icon">💰</span>
+      <div class="stat-label">Total Invested</div>
+      <div class="stat-value" id="homeInvested">₹0</div>
+    </div>
+    <div class="stat-card">
+      <span class="stat-icon">📈</span>
+      <div class="stat-label">Current Value</div>
+      <div class="stat-value" id="homeCurrent">₹0</div>
+    </div>
+    <div class="stat-card">
+      <span class="stat-icon">📊</span>
+      <div class="stat-label">Profit / Loss</div>
+      <div class="stat-value" id="homePL">₹0</div>
+    </div>
+    <div class="stat-card">
+      <span class="stat-icon">🧾</span>
+      <div class="stat-label">Investments</div>
+      <div class="stat-value" id="homeCount">0</div>
+    </div>
+  </div>
+
+  <div class="home-panel">
+    <div class="panel-title-row">
+      <div>
+        <h2>Asset Allocation</h2>
+        <span class="panel-subtitle">Current portfolio by investment type</span>
+      </div>
+    </div>
+    <div class="allocation-list" id="homeAllocation"></div>
+  </div>
+
+  <div class="home-panel">
+    <div class="panel-title-row">
+      <div>
+        <h2>Income & Maturity</h2>
+        <span class="panel-subtitle">Interest received and upcoming maturity overview</span>
+      </div>
+      <button class="mini-action" data-tab="payouts">View Payouts →</button>
+    </div>
+    <div class="income-grid">
+      <div class="income-box">
+        <span>Interest Received</span>
+        <strong id="homeInterest">₹0</strong>
+      </div>
+      <div class="income-box">
+        <span>TDS</span>
+        <strong id="homeTDS">₹0</strong>
+      </div>
+      <div class="income-box">
+        <span>Net Interest</span>
+        <strong id="homeNetInterest">₹0</strong>
+      </div>
+      <div class="income-box">
+        <span>Upcoming Maturities</span>
+        <strong id="homeMaturities">0</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-panel quick-panel">
+    <div class="panel-title-row">
+      <div>
+        <h2>Quick Actions</h2>
+        <span class="panel-subtitle">Manage your family portfolio</span>
+      </div>
+    </div>
+    <div class="quick-actions">
+      <button type="button" data-tab="portfolio">▣ <span>Investments</span></button>
+      <button type="button" data-tab="add">＋ <span>Add Investment</span></button>
+      <button type="button" data-tab="payouts">₹ <span>Interest Payouts</span></button>
+      <button type="button" data-tab="members">☻ <span>Family</span></button>
+      <button type="button" data-tab="backup">↻ <span>Backup</span></button>
+    </div>
+  </div>
+</section>
+
+<div id="subnav" class="tabs">
+<button class="active" data-tab="portfolio">Portfolio</button>
+<button data-tab="payouts">💰 Payouts</button>
+<button data-tab="add">Add Investment</button>
+<button data-tab="members">Members</button>
+<button data-tab="backup">Backup</button>
+</div>
+
+
+<section id="portfolio" class="portfolio-area card">
+<div class="row"><h3>Portfolio</h3><span class="pill" id="filterLabel">All members</span></div>
+<label>Filter by member</label><select id="filterMember"></select>
+
+<div id="portfolioValueSummaryV50" class="portfolio-value-summary">
+  <div class="pv50-title-row"><div class="pv50-title">Portfolio Value</div><span id="pv50Scope" class="pill">All members</span></div>
+  <div class="pv50-grid">
+    <div class="pv50-card"><div class="pv50-label">Investment Value</div><div id="pv50Invested" class="pv50-value">₹0</div></div>
+    <div class="pv50-card"><div class="pv50-label">Current Value</div><div id="pv50Current" class="pv50-value">₹0</div></div><div id="pv50PLCard" class="pv50-card pl-card"><div class="pv50-label">Profit / Loss</div><div id="pv50PL" class="pv50-value">₹0</div></div>
+  </div>
+  <div class="pv50-member-heading">Member-wise Value</div>
+  <div id="pv50Members"></div>
+</div>
+<div id="bondSummary" class="small" style="margin:10px 0"></div>
+<div style="overflow:auto"><table class="portfolio-table"><thead><tr><th>Investment</th><th>Member</th><th>Invested</th><th>Current</th><th>P/L</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
+</section>
+
+<section id="payouts" class="card hide">
+<h3>💰 Interest Payouts</h3>
+<div class="small" style="margin-bottom:12px">All bond/debenture payout schedules in one place. Portfolio cards stay clean.</div>
+<div id="payoutDashboard"></div>
+</section>
+
+<section id="add" class="card hide">
+<h3>Add Investment</h3>
+<label>Member</label><select id="member"></select>
+<label>Investment name</label><input id="name" placeholder="e.g. Anlon Healthcare">
+<label>Type</label><select id="type"><option>Equity</option><option>Mutual Fund</option><option>Bond / Debenture</option><option>FD / RD</option><option>Gold</option><option>Other</option></select>
+
+<div id="livePLPreview" class="kpi" style="margin-top:10px;padding:12px">
+  <div class="small">Estimated Profit / Loss</div>
+  <div id="livePLValue" class="metric">₹0</div>
+  <div id="livePLPercent" class="small">0.00%</div>
+</div>
+
+<div id="bondFields" class="hide">
+<label>Bond interest rate (% p.a.)</label><input id="interestRate" type="number" step="0.01" inputmode="decimal" placeholder="e.g. 10.50">
+<label>Interest payout</label><select id="payout"><option>Monthly</option><option>Quarterly</option><option>Half-Yearly</option><option>Yearly</option><option>At Maturity</option></select>
+<label>Accrued interest paid upfront (₹)</label><input id="accruedUpfront" type="number" inputmode="decimal" placeholder="0">
+<label>Total interest received so far (₹)</label><input id="interestReceived" type="number" inputmode="decimal" placeholder="0">
+<label>TDS deducted so far (₹)</label><input id="tds" type="number" inputmode="decimal" placeholder="0">
+<label>TDS %</label><input id="tdsPercent" type="number" inputmode="decimal" min="0" max="100" step="0.01" placeholder="e.g. 10">
+<div id="tdsCalcDisplay" class="kpi" style="margin:10px 0;padding:10px">
+  <div class="small">Calculated TDS</div>
+  <div id="tdsCalcAmount" class="metric" style="font-size:20px">₹0</div>
+  <div id="tdsNetAmount" class="small">Net Interest: ₹0</div>
+</div>
+</div>
+<label>Investment date</label><input id="date" type="date">
+<label>Amount invested / Principal (₹)</label><input id="amount" type="number" inputmode="decimal">
+<label>Current value (₹)</label><input id="value" type="number" inputmode="decimal">
+<label>Maturity date (optional)</label><input id="maturity" type="date">
+<label>Notes</label><input id="notes" placeholder="Broker / folio / coupon etc.">
+<button id="saveBtn">Save Investment</button>
+<button id="cancelEditBtn" class="secondary hide">Cancel Edit</button>
+</section>
+
+<section id="members" class="card hide">
+<h3>Family Members</h3>
+<div class="small" style="margin:-5px 0 12px">Family-wise investment, current value, profit/loss and income at a glance.</div>
+<div id="familyOverview" class="grid" style="margin-bottom:14px"></div>
+<div id="familyIncomeSummary"></div>
+<div id="memberList"></div>
+<label>Add member</label><input id="newMember" placeholder="Name">
+<button id="addMemberBtn">Add Member</button>
+</section>
+
+<section id="backup" class="card hide">
+<h3>Backup & Restore</h3>
+<p class="small">Your portfolio data is stored on this phone/browser. Download a backup regularly and keep it safely in Google Drive.</p>
+<div class="grid" style="margin:12px 0">
+  <div class="kpi"><div class="small">Backup</div><div class="metric" style="font-size:18px">Safe Download</div><div class="small">JSON copy of your data</div></div>
+  <div class="kpi"><div class="small">Restore</div><div class="metric" style="font-size:18px">Protected</div><div class="small">Current data gets a safety copy first</div></div>
+</div>
+<button id="exportBtn">⬇ Download Backup</button>
+<div class="card" style="margin:14px 0;background:linear-gradient(145deg,#f7fbff,#eef7ff);border:1px solid #cfe2f7">
+<h4 style="margin:0 0 6px">☁ Google Account Backup</h4>
+<p class="small">Connect your Google account once. After that, your investment data can be backed up directly to Google Drive — no need to find a Downloads folder.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+<button id="googleConnectBtn">☁ Connect Google Account</button>
+<button id="googleBackupBtn" class="secondary" disabled>☁ Backup to Google Drive</button>
+</div>
+<label style="display:flex;align-items:center;gap:8px;margin-top:10px;font-weight:700"><input id="googleAutoBackup" type="checkbox" style="width:auto;margin:0" disabled> Automatic backup after changes</label>
+<div id="googleStatus" class="small" style="margin-top:8px">Google Drive not connected</div>
+<div id="googleLastBackup" class="small" style="margin-top:5px"></div>
+<p class="small" style="margin-top:9px">🔒 Your Google password is never stored in this app. Google permission is used only for the backup file.</p>
+<details style="margin-top:10px"><summary style="font-size:11px;color:#52708f;font-weight:700;cursor:pointer">Advanced Google setup</summary>
+<p class="small">For this standalone HTML app, a Google OAuth Client ID must be configured once by the app owner. You do not need to enter your Google password here.</p>
+<label>Google OAuth Client ID</label>
+<input id="googleClientId" placeholder="xxxxxxxxxxxx-xxxx.apps.googleusercontent.com" autocomplete="off">
+</details>
+<p class="small" style="margin-top:8px">Backup file: <b>mohan-family-investment-backup.json</b> in Google Drive.</p>
+</div>
+<label>Restore backup JSON</label><input id="restoreFile" type="file" accept=".json">
+<p class="small">Old V26/V27/V28 JSON backups are supported. A damaged or invalid file will not replace your data.</p>
+<button class="secondary" id="clearBtn">Delete All Local Data</button>
+</section>
+
+<div id="investmentOverlay" class="investment-overlay hide" aria-hidden="true">
+  <div class="investment-sheet" role="dialog" aria-modal="true" aria-labelledby="investmentDetailTitle">
+    <div class="row">
+      <h2 id="investmentDetailTitle">Investment</h2>
+      <button id="detailCloseTop" class="secondary" style="width:auto;margin:0;padding:8px 13px">×</button>
+    </div>
+    <div id="investmentDetailBody"></div>
+
+<div id="detailPayoutSummary" class="card" style="margin:10px 0;padding:12px">
+  <div class="small">Payout & Maturity Summary</div>
+  <div class="grid" style="margin-top:8px">
+    <div class="kpi"><div class="small">Interest Received</div><div id="detailInterest">₹0</div></div>
+    <div class="kpi"><div class="small">Pending Interest</div><div id="detailPending">₹0</div></div>
+    <div class="kpi"><div class="small">Maturity Value</div><div id="detailMaturityValue">₹0</div></div>
+    <div class="kpi"><div class="small">Maturity Date</div><div id="detailMaturityDate">—</div></div>
+  </div>
+</div>
+
+    <div class="detail-actions">
+      <button id="detailEditBtn">Edit Investment</button>
+      <button id="detailCloseBtn" class="secondary">Close</button>
+    </div>
+  </div>
+</div>
+
+
+
+<section id="dashboardSummaryV45" class="card" style="margin-top:12px">
+  <div class="row"><div><h3 style="margin:0">Portfolio Summary</h3><div class="small">Live summary from your saved investments</div></div></div>
+  <div class="grid" style="margin-top:10px">
+    <div class="kpi"><div class="small">Investment Value</div><div id="sumInvested" class="metric">₹0</div></div>
+    <div class="kpi"><div class="small">Current Value</div><div id="sumCurrent" class="metric">₹0</div></div>
+    <div class="kpi"><div class="small">Profit / Loss</div><div id="sumPL" class="metric">₹0</div></div>
+    <div class="kpi"><div class="small">Interest Received</div><div id="sumInterest" class="metric">₹0</div></div>
+    <div class="kpi"><div class="small">Total TDS</div><div id="sumTDS" class="metric">₹0</div></div>
+    <div class="kpi"><div class="small">Pending Interest</div><div id="sumPending" class="metric">₹0</div></div>
+    <div class="kpi"><div class="small">Maturity ≤ 30 Days</div><div id="sumMaturity" class="metric">0</div></div>
+  </div>
+</section>
+
+<section id="maturityTrackerCard" class="card" style="margin-top:12px">
+  <div class="row">
+    <div>
+      <h3 style="margin:0">📅 Upcoming Maturities</h3>
+      <div class="small">Investments maturing within 90 days</div>
+    </div>
+    <div id="maturity90Count" class="metric" style="font-size:20px">0</div>
+  </div>
+  <div id="maturityTrackerList" style="margin-top:10px"></div>
+</section>
+
+</main>
+
+<script>
+(function(){
+"use strict";
+const KEY="familyInvestmentTrackerV1Fixed";
+let db={members:["Mohan"],investments:[]};
+
+function load(){
+ try{const x=localStorage.getItem(KEY); if(x) db=JSON.parse(x);}catch(e){console.log(e);}
+ if(!Array.isArray(db.members)||!Array.isArray(db.investments)) db={members:["Mohan"],investments:[]};
+}
+function save(){
+ db.investments.forEach(x=>{try{delete x._trackerIndex;}catch(e){}});
+ localStorage.setItem(KEY,JSON.stringify(db)); render();
+ try{localStorage.setItem(KEY+"_lastSave",new Date().toISOString());}catch(e){}
+ if(document.getElementById("payouts")&&!document.getElementById("payouts").classList.contains("hide")) renderPayoutDashboard();
+ try{if(localStorage.getItem(GOOGLE_AUTO_KEY)==="1"&&googleToken) uploadBackupToDrive(false);}catch(e){}
+}
+function $(id){return document.getElementById(id);}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function money(n){return new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:0}).format(Number(n)||0);}
+
+function fillMembers(){
+ $("member").innerHTML=db.members.map(m=>"<option>"+esc(m)+"</option>").join("");
+ const old=$("filterMember").value;
+ $("filterMember").innerHTML='<option value="">All members</option>'+db.members.map(m=>"<option>"+esc(m)+"</option>").join("");
+ if(db.members.includes(old)) $("filterMember").value=old;
+ $("memberList").innerHTML=db.members.map((m,i)=>'<div class="row" style="padding:8px 0;border-bottom:1px solid #eee"><span>'+esc(m)+'</span><span class="actions"><button data-remove="'+i+'">Remove</button></span></div>').join("");
+}
+function bondCalc(x){
+ if(x.type!=="Bond / Debenture") return null;
+ const principal=Number(x.amount)||0, rate=Number(x.interestRate)||0;
+ const start=x.date?new Date(x.date+"T00:00:00"):new Date();
+ const end=x.maturity?new Date(x.maturity+"T00:00:00"):new Date();
+ const today=new Date(); today.setHours(0,0,0,0);
+ const effectiveEnd=end<today?end:today;
+ let months=(effectiveEnd-start)/(1000*60*60*24*30.4375);
+ if(months<0) months=0;
+ const totalTermMonths=x.maturity?Math.max(0,(end-start)/(1000*60*60*24*30.4375)):months;
+ const monthly=principal*rate/100/12;
+ const payout=x.payout||"Monthly";
+ const periods={Monthly:1,Quarterly:3,"Half-Yearly":6,Yearly:12,"At Maturity":0};
+ const step=periods[payout]===undefined?1:periods[payout];
+ let payoutInterest=principal*rate/100*(totalTermMonths/12);
+ if(step){
+   const firstEnd=addMonths(start,step);
+   const payoutEnd=firstEnd<end?firstEnd:end;
+   const payoutDays=Math.max(0,Math.round((payoutEnd-start)/86400000));
+   payoutInterest=principal*rate/100*payoutDays/365;
+ }
+ const accrued=principal*rate/100*(Math.max(0,Math.round((effectiveEnd-start)/86400000))/365);
+ const totalDays=Math.max(0,Math.round((end-start)/86400000));
+ const totalTermInterest=principal*rate/100*(totalDays/365);
+ const maturityValue=principal+totalTermInterest;
+ return {principal,rate,monthly,payoutInterest,accrued,totalTermInterest,maturityValue,months,totalTermMonths,payout};
+}
+
+function addMonths(date, months){
+ const d=new Date(date.getTime());
+ const day=d.getDate();
+ d.setDate(1);
+ d.setMonth(d.getMonth()+months);
+ const last=new Date(d.getFullYear(),d.getMonth()+1,0).getDate();
+ d.setDate(Math.min(day,last));
+ return d;
+}
+function dateKey(d){
+ return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+}
+function prettyDateObj(d){
+ return d.toLocaleDateString("en-IN",{day:"2-digit",month:"short",year:"numeric"});
+}
+function bondSchedule(x){
+ const b=bondCalc(x);
+ if(!b || !x.date || !x.maturity) return null;
+ const start=new Date(x.date+"T00:00:00");
+ const end=new Date(x.maturity+"T00:00:00");
+ if(end<=start) return null;
+ const monthsMap={Monthly:1,Quarterly:3,"Half-Yearly":6,Yearly:12};
+ const step=monthsMap[b.payout];
+ const rows=[];
+ let prev=new Date(start);
+ let next=step?addMonths(start,step):new Date(end);
+ while(next<end && rows.length<60){
+   const days=Math.max(0,Math.round((next-prev)/86400000));
+   const interest=b.principal*b.rate/100*days/365;
+   const upfront=rows.length===0?Number(x.accruedUpfront||0):0;
+   rows.push({date:new Date(next),days,interest,upfront,total:interest+upfront,final:false});
+   prev=new Date(next);
+   next=addMonths(next,step);
+ }
+ const days=Math.max(0,Math.round((end-prev)/86400000));
+ const finalInterest=b.principal*b.rate/100*days/365;
+ const upfront=rows.length===0?Number(x.accruedUpfront||0):0;
+ rows.push({date:new Date(end),days,interest:finalInterest,upfront,total:b.principal+finalInterest+upfront,final:true});
+ const totalInterest=rows.reduce((s,r)=>s+r.interest,0);
+ const totalCash=rows.reduce((s,r)=>s+r.total,0);
+ return {rows,totalInterest,totalCash,upfront:Number(x.accruedUpfront||0)};
+}
+function renderBondSchedule(x){
+ const s=bondSchedule(x);
+ if(!s) return "";
+ const paid=Array.isArray(x.payouts)?x.payouts:[];
+ let out="<div class='bond-schedule'><div class='schedule-title'>Payout Tracker</div>";
+ s.rows.forEach((r,idx)=>{
+   const key=dateKey(r.date);
+   const rec=paid.find(p=>p.date===key);
+   const label=r.final?"Principal + Interest":"Interest";
+   const amount=money(r.total);
+   out+="<div class='schedule-row'><div><b>"+prettyDateObj(r.date)+"</b><span>"+label+" • "+r.days+" days</span>";
+   if(r.upfront>0 && idx===0){
+     out+="<small>Interest "+money(r.interest)+" + upfront accrued "+money(r.upfront)+"</small>";
+   }
+   if(rec){
+     out+="<div class='payout-received'>Received "+money(rec.received)+" • TDS "+money(rec.tds||0)+" • Net "+money((Number(rec.received)||0)-(Number(rec.tds)||0))+"</div>";
+   }
+   out+="</div><div style='text-align:right'><strong class='"+(r.final?"maturity-pay":"interest-pay")+"'>+"+amount+"</strong>";
+   if(rec){
+     out+="<div><span class='payout-status received'>✓ Received</span><br><button class='secondary payout-btn' data-unreceive='"+esc(x._trackerIndex)+"|"+key+"'>Undo</button></div>";
+   }else{
+     out+="<div><span class='payout-status pending'>Pending</span><br><button class='payout-btn' data-receive='"+esc(x._trackerIndex)+"|"+key+"|"+r.total.toFixed(2)+"'>Mark Received</button></div>";
+   }
+   out+="</div></div>";
+   if(r.upfront>0 && idx===0){
+     out+="<div class='schedule-note'>First payout includes "+money(r.upfront)+" accrued interest paid upfront. Net gain for this payout: "+money(r.interest)+"</div>";
+   }
+ });
+ const receivedTotal=paid.reduce((s,p)=>s+Number(p.received||0),0);
+ const tdsTotal=paid.reduce((s,p)=>s+Number(p.tds||0),0);
+ out+="<div class='payout-tools'><div class='row'><span><b>Payout tracker</b></span><span>"+paid.length+"/"+s.rows.length+" received</span></div>";
+ out+="<div class='small'>Received: <b>"+money(receivedTotal)+"</b> • TDS: <b>"+money(tdsTotal)+"</b> • Net: <b>"+money(receivedTotal-tdsTotal)+"</b></div></div>";
+ out+="<div class='schedule-total'><span>Total projected cash received</span><b>"+money(s.totalCash)+"</b></div></div>";
+ return out;
+}
+function payoutAccounting(x){
+ const result={scheduledInterest:0,receivedInterest:0,receivedTotal:0,receivedPrincipal:0,tds:0,netInterest:0};
+ const b=bondCalc(x); if(!b) return result;
+ const s=bondSchedule(x), paid=Array.isArray(x.payouts)?x.payouts:[];
+ if(!s){
+   result.scheduledInterest=Number(b.totalTermInterest||0)+Number(x.accruedUpfront||0);
+   result.receivedInterest=Math.min(result.scheduledInterest,Math.max(0,Number(x.interestReceived??x.receivedInterest??0)||0));
+   result.tds=Math.max(0,Number(x.tds||0)); result.netInterest=Math.max(0,result.receivedInterest-result.tds); return result;
+ }
+ result.scheduledInterest=Number(s.totalInterest||0)+Number(s.upfront||0);
+ s.rows.forEach(r=>{ const rec=paid.find(p=>p.date===dateKey(r.date)); if(!rec)return;
+   const received=Math.max(0,Number(rec.received||0));
+   const interestPart=Math.min(received,Math.max(0,Number(r.interest||0)+Number(r.upfront||0)));
+   result.receivedTotal+=received; result.receivedInterest+=interestPart; result.receivedPrincipal+=Math.max(0,received-interestPart); result.tds+=Math.max(0,Number(rec.tds||0));
+ });
+ result.receivedInterest=Math.min(result.receivedInterest,result.scheduledInterest); result.netInterest=Math.max(0,result.receivedInterest-result.tds); return result;
+}
+function investmentIncomeAccounting(x){
+ if(x.type==='Bond / Debenture') return payoutAccounting(x);
+ const interest=Math.max(0,Number(x.interestReceived??x.receivedInterest??0)||0); const tds=Math.max(0,Math.min(Number(x.tds||0)||0,interest));
+ return {scheduledInterest:interest,receivedInterest:interest,receivedTotal:interest,receivedPrincipal:0,tds,netInterest:Math.max(0,interest-tds)};
+}
+
+function daysUntil(dateStr){
+ if(!dateStr)return null;
+ const d=new Date(dateStr+"T00:00:00"), now=new Date();
+ now.setHours(0,0,0,0);
+ return Math.ceil((d-now)/(1000*60*60*24));
+}
+function fmtDate(dateStr){
+ if(!dateStr)return "";
+ const d=new Date(dateStr+"T00:00:00");
+ return d.toLocaleDateString("en-IN",{day:"2-digit",month:"short",year:"numeric"});
+}
+
+function displayCurrentValue(x){
+ const daily=Number(x && x._dailyCurrentValueV53);
+ if(Number.isFinite(daily) && daily>0) return daily;
+ return Number(x?.currentValue ?? x?.value ?? x?.current ?? x?.amount ?? 0) || 0;
+}
+
+function renderHomeDashboard(){
+ const inv=Array.isArray(db.investments)?db.investments:[];
+ const invested=inv.reduce((a,x)=>a+(Number(x.amount) || 0),0);
+ const current=inv.reduce((a,x)=>a+displayCurrentValue(x),0);
+ const pl=current-invested;
+ const incomeTotals=inv.reduce((acc,x)=>{
+   const a=investmentIncomeAccounting(x); acc.interest+=a.receivedInterest; acc.tds+=a.tds; return acc;
+ },{interest:0,tds:0});
+ const interest=incomeTotals.interest;
+ const tds=incomeTotals.tds;
+ const net=interest-tds;
+ const total=money(current);
+ const set=(id,v)=>{const e=$(id);if(e)e.textContent=v};
+ set("homeTotalValue",total);
+ set("homeInvested",money(invested));
+ set("homeCurrent",money(current));
+ set("homePL",(pl>=0?"":"-")+money(Math.abs(pl)));
+ const homePlEl=$("homePL"); if(homePlEl) homePlEl.className="stat-value "+(pl>=0?"profit-text":"loss-text");
+ set("homeCount",String(inv.length));
+ set("homeProfit",(pl>=0?"▲ ":"▼ ")+(pl>=0?money(pl):money(Math.abs(pl)))+" "+(pl>=0?"Profit":"Loss"));
+ const homeProfitEl=$("homeProfit"); if(homeProfitEl) homeProfitEl.classList.toggle("profit-text",pl>=0),homeProfitEl.classList.toggle("loss-text",pl<0);
+ set("homeInterest",money(interest));
+ set("homeTDS",money(tds));
+ set("homeNetInterest",money(net));
+ const maturities=inv.filter(x=>x.maturity && new Date(x.maturity+"T23:59:59")>=new Date()).length;
+ set("homeMaturities",String(maturities));
+ const dateEl=$("homeDate");
+ if(dateEl) dateEl.textContent=new Date().toLocaleDateString("en-IN",{day:"2-digit",month:"short",year:"numeric"});
+ const types=[
+   ["Equity",["Equity"],"📈","Equity"],
+   ["Mutual Funds",["Mutual Fund","Mutual Funds"],"📊","Mutual Funds"],
+   ["Bonds",["Bond / Debenture"],"🏦","Bonds"],
+   ["FD / Gold",["FD / RD","FD/RD","Gold","FD / Gold"],"💰","FD / Gold"]
+ ];
+ const alloc=$("homeAllocation");
+ if(alloc){
+   alloc.innerHTML=types.map(([key,names,icon,displayName])=>{
+     const value=inv.filter(x=>names.includes(String(x.type||""))).reduce((a,x)=>a+displayCurrentValue(x),0);
+     const pct=current?Math.round(value/current*100):0;
+     return '<div class="alloc-row"><div class="alloc-icon">'+icon+'</div><div><div class="alloc-name">'+displayName+' <span style="font-weight:500;color:#8a96a5">('+pct+'%)</span></div><div class="alloc-bar-wrap"><div class="alloc-bar" style="width:'+pct+'%"></div></div></div><div class="alloc-value">'+money(value)+'</div></div>';
+   }).join("");
+ }
+}
+
+function renderFamilyOverview(){
+ const el=$('familyOverview'); if(!el)return;
+ const incomeEl=$('familyIncomeSummary');
+ const inv=db.investments||[];
+ const totalInvested=inv.reduce((a,x)=>a+Number(x.amount||0),0);
+ const totalCurrent=inv.reduce((a,x)=>a+displayCurrentValue(x),0);
+ const totalPL=totalCurrent-totalInvested;
+ const maturityStats=inv.reduce((acc,x)=>{
+   const b=bondCalc(x);
+   if(b){ const a=payoutAccounting(x), totalProfit=a.scheduledInterest, receivedProfit=Math.min(totalProfit,a.receivedInterest);
+     acc.invested+=Number(b.principal||0); acc.maturity+=Number(b.principal||0)+totalProfit; acc.profit+=totalProfit; acc.received+=receivedProfit; acc.future+=Math.max(0,totalProfit-receivedProfit);
+   } else { const v=displayCurrentValue(x), a=Number(x.amount||0); acc.invested+=a; acc.maturity+=v; acc.profit+=Math.max(0,v-a); }
+   return acc;
+ },{invested:0,maturity:0,profit:0,received:0,future:0});
+ let html='<div class="kpi family-total"><div class="small">Family Portfolio</div><div class="metric">'+money(totalCurrent)+'</div><div class="small">Invested '+money(totalInvested)+' • '+(totalPL>=0?'Profit ':'Loss ')+money(Math.abs(totalPL))+'</div><div class="small" style="margin-top:5px">Estimated total maturity proceeds '+money(maturityStats.maturity)+'</div><div class="maturity-breakdown"><div><span>Est. Total Profit</span><b>'+money(maturityStats.profit)+'</b></div><div><span>Received Profit</span><b>'+money(maturityStats.received)+'</b></div><div><span>Future Profit</span><b>'+money(maturityStats.future)+'</b></div></div></div>';
+ html+=db.members.map(m=>{
+   const items=inv.filter(x=>x.member===m);
+   const invested=items.reduce((a,x)=>a+Number(x.amount||0),0);
+   const current=items.reduce((a,x)=>a+displayCurrentValue(x),0);
+   const memberIncome=items.reduce((a,x)=>{const q=investmentIncomeAccounting(x);a.interest+=q.receivedInterest;a.tds+=q.tds;return a;},{interest:0,tds:0});
+   const bonds=items.filter(x=>x.type==='Bond / Debenture').length;
+   const upcoming=items.filter(x=>x.maturity && new Date(x.maturity+'T23:59:59')>=new Date()).length;
+   const ms=items.reduce((a,x)=>{const b=bondCalc(x);if(b){const q=payoutAccounting(x),tp=q.scheduledInterest;a.maturity+=Number(b.principal||0)+tp;a.profit+=tp;a.received+=Math.min(tp,q.receivedInterest);a.future+=Math.max(0,tp-q.receivedInterest);}else{const v=displayCurrentValue(x),p=Number(x.amount||0);a.maturity+=v;a.profit+=Math.max(0,v-p);}return a;},{maturity:0,profit:0,received:0,future:0});
+   return '<div class="family-member-card"><div class="row"><div><div class="name">'+esc(m)+'</div><div class="meta">'+items.length+' investment'+(items.length===1?'':'s')+' • '+bonds+' bond'+(bonds===1?'':'s')+'</div></div><span class="pill">'+(upcoming?'Upcoming '+upcoming:'No maturity')+'</span></div><div class="amount">'+money(current)+'</div><div class="meta">Current portfolio value</div><div class="mini"><div><span>Invested</span><b>'+money(invested)+'</b></div><div><span>Est. Maturity</span><b>'+money(ms.maturity)+'</b></div><div><span>Est. Total Profit</span><b class="profit">'+money(ms.profit)+'</b></div><div><span>Received Profit</span><b>'+money(ms.received)+'</b></div><div><span>Future Profit</span><b class="profit">'+money(ms.future)+'</b></div><div><span>TDS</span><b>'+money(memberIncome.tds)+'</b></div></div><div class="member-actions"><button class="secondary" data-member-view="'+esc(m)+'">View Portfolio</button></div></div>';
+ }).join('');
+ el.innerHTML=html;
+
+ if(!incomeEl)return;
+ const now=new Date(); now.setHours(0,0,0,0);
+ let familyScheduled=0,familyReceived=0,familyPending=0,familyTds=0,familyDue=0,familyUpcoming=0,familyNext=null;
+ const memberIncome=db.members.map(m=>{
+   let scheduled=0,received=0,pending=0,tds=0,next=null,maturityCount=0;
+   inv.filter(x=>x.member===m && x.type==='Bond / Debenture').forEach(x=>{
+     if(x.maturity && new Date(x.maturity+'T23:59:59')>=now)maturityCount++;
+     const sch=bondSchedule(x); if(!sch)return; const paid=Array.isArray(x.payouts)?x.payouts:[];
+     sch.rows.forEach(r=>{ scheduled+=Number(r.total||0); const rec=paid.find(p=>p.date===dateKey(r.date));
+       if(rec){ received+=Number(rec.received||0); tds+=Math.max(0,Number(rec.tds||0)); }
+       else { pending+=Number(r.total||0); if(r.date<now)familyDue++; else {familyUpcoming++;if(!familyNext||r.date<familyNext.date)familyNext={...r,name:x.name,member:x.member};if(!next||r.date<next.date)next={date:r.date,amount:r.total,name:x.name};} }
+     });
+   });
+   familyScheduled+=scheduled;familyReceived+=received;familyPending+=pending;familyTds+=tds; return {m,scheduled,received,pending,tds,next,maturityCount};
+ });
+ let summary='<div class="family-income-card"><div class="family-income-head"><div><div class="family-income-title">Income & Maturity Summary</div><div class="family-income-sub">Family-wise scheduled payouts, received income and upcoming maturities</div></div><span class="pill">'+familyUpcoming+' upcoming</span></div><div class="family-income-grid">'+
+   '<div class="kpi"><div class="small">Scheduled</div><div class="metric">'+money(familyScheduled)+'</div></div>'+
+   '<div class="kpi green"><div class="small">Received</div><div class="metric">'+money(familyReceived)+'</div></div>'+
+   '<div class="kpi amber"><div class="small">Pending</div><div class="metric">'+money(familyPending)+'</div></div>'+
+   '<div class="kpi"><div class="small">TDS</div><div class="metric">'+money(familyTds)+'</div></div></div>'+
+   (familyNext?'<div class="family-next">Next payout<b>'+prettyDateObj(familyNext.date)+' • '+money(familyNext.amount)+'</b><span>'+esc(familyNext.name||'')+' • '+esc(familyNext.member||'')+'</span></div>':'<div class="family-next">No pending payouts</div>')+
+   '</div>';
+ summary+='<div class="family-income-card"><div class="family-income-title">Member-wise Payout Income</div><div class="family-income-sub">Quick view without opening each member</div><div style="overflow:auto"><table><thead><tr><th>Member</th><th>Scheduled</th><th>Received</th><th>Pending</th><th>Maturity</th></tr></thead><tbody>';
+ summary+=memberIncome.map(r=>'<tr><td><b>'+esc(r.m)+'</b></td><td>'+money(r.scheduled)+'</td><td class="profit">'+money(r.received)+'</td><td>'+money(r.pending)+'</td><td>'+r.maturityCount+'</td></tr>').join('');
+ summary+='</tbody></table></div></div>';
+ incomeEl.innerHTML=summary;
+}
+
+function renderDashboardSummaryV45(){
+ const inv=db.investments||[];
+ let invested=0,current=0,interest=0,tds=0,pending=0,maturity=0;
+ inv.forEach(x=>{
+   const a=Number(x.amount||0), v=displayCurrentValue(x);
+   invested+=a; current+=v;
+   interest+=Number(x.interestReceived??x.receivedInterest??0);
+   tds+=Number(x.tds||0);
+   const info=maturityInfo(x);
+   if(info && info.days>=0 && info.days<=30) maturity++;
+   const mv=Number(x.maturityValue||x.maturityAmount||0);
+   if(mv) pending+=Math.max(0,mv-a-Number(x.interestReceived??x.receivedInterest??0));
+ });
+ const pl=current-invested;
+ const set=(id,val)=>{const e=$(id);if(e)e.textContent=val;};
+ set("sumInvested",money(invested));
+ set("sumCurrent",money(current));
+ set("sumPL",(pl>=0?"+":"-")+money(Math.abs(pl)));
+ set("sumInterest",money(interest));
+ set("sumTDS",money(tds));
+ set("sumPending",money(pending));
+ set("sumMaturity",String(maturity));
+ const plEl=$("sumPL"); if(plEl){plEl.classList.toggle("profit",pl>=0);plEl.classList.toggle("loss",pl<0);}
+}
+
+
+function renderPortfolioValueSummaryV50(list, filterMember){
+  const all=(db && Array.isArray(db.investments))?db.investments:[];
+  const scoped=Array.isArray(list)?list:all;
+  const moneyFn=typeof money==="function"?money:(n=>"₹"+Math.round(n).toLocaleString("en-IN"));
+  const invested=scoped.reduce((s,x)=>s+Number(x.amount||x.invested||x.principal||0),0);
+  const current=scoped.reduce((s,x)=>s+displayCurrentValue(x),0);
+  const set=(id,val)=>{const e=document.getElementById(id);if(e)e.textContent=moneyFn(val);};
+  set("pv50Invested",invested); set("pv50Current",current); const pl=current-invested; const plEl=document.getElementById("pv50PL"); const plCard=document.getElementById("pv50PLCard"); if(plEl){plEl.textContent=(pl>=0?"+":"-")+moneyFn(Math.abs(pl)); plEl.classList.toggle("profit",pl>=0); plEl.classList.toggle("loss",pl<0);} if(plCard){plCard.classList.toggle("profit-bg",pl>=0); plCard.classList.toggle("loss-bg",pl<0);}
+  const scope=document.getElementById("pv50Scope"); if(scope)scope.textContent=filterMember||"All members";
+  const box=document.getElementById("pv50Members"); if(!box)return;
+  const by={};
+  all.forEach(x=>{
+    const member=x.member||x.owner||x.person||"Unassigned";
+    if(filterMember && member!==filterMember)return;
+    const a=Number(x.amount||x.invested||x.principal||0);
+    const v=displayCurrentValue(x);
+    if(!by[member])by[member]={invested:0,current:0,count:0};
+    by[member].invested+=a; by[member].current+=v; by[member].count++;
+  });
+  const names=Object.keys(by);
+  box.innerHTML=names.length?names.map(n=>{
+    const d=by[n].current-by[n].invested;
+    return `<div class="pv50-member">
+      <div><div class="pv50-name">${esc(n)}</div><div class="pv50-small">${by[n].count} investment${by[n].count==1?"":"s"}</div></div>
+      <div class="pv50-values"><div><div class="pv50-small">Invested</div><b>${moneyFn(by[n].invested)}</b></div><div><div class="pv50-small">Current</div><b>${moneyFn(by[n].current)}</b></div><div><div class="pv50-small">P/L</div><b class="${d>=0?"profit":"loss"}">${d>=0?"+":"-"}${moneyFn(Math.abs(d))}</b></div></div>
+    </div>`;
+  }).join(""): `<div class="pv50-small">No investments added yet.</div>`;
+}
+
+
+function refreshDailyCurrentValueV53(){
+  const list=(typeof db!=="undefined" && Array.isArray(db.investments))?db.investments:[];
+  const today=new Date(); today.setHours(0,0,0,0);
+  list.forEach(x=>{
+    const principal=Number(x.amount ?? x.investedAmount ?? x.principal ?? 0);
+    const rate=Number(x.rate ?? x.interestRate ?? x.annualRate ?? x.roi ?? 0);
+    const raw=x.startDate ?? x.investmentDate ?? x.purchaseDate ?? x.date;
+    if(!principal || !rate || !raw) return;
+    const start=new Date(String(raw).slice(0,10)+"T00:00:00");
+    if(Number.isNaN(start.getTime())) return;
+    const days=Math.max(0,Math.floor((today-start)/86400000));
+    const freq=String(x.compoundingFrequency ?? x.compoundFrequency ?? x.frequency ?? x.interestFrequency ?? "yearly").toLowerCase();
+    let n=1;
+    if(freq.includes("month")) n=12;
+    else if(freq.includes("quarter")) n=4;
+    else if(freq.includes("half")) n=2;
+    else if(freq.includes("week")) n=52;
+    const years=days/365;
+    const accrued=principal*Math.pow(1+(rate/100)/n,n*years);
+    // Keep the existing stored fields intact; only expose the calculated display value.
+    x._dailyCurrentValueV53=accrued;
+  });
+}
+
+function render(){
+ refreshDailyCurrentValueV53();
+ renderDashboardSummaryV45();
+ renderMaturityTracker();
+ renderHomeDashboard();
+ fillMembers();
+ renderFamilyOverview();
+
+ const f=$("filterMember") ? $("filterMember").value : "";
+ const list=db.investments.filter(x=>!f||x.member===f);
+ renderPortfolioValueSummaryV50(list, f);
+
+ const invested=list.reduce((s,x)=>s+Number(x.amount||0),0);
+ const current=list.reduce((s,x)=>s+displayCurrentValue(x),0);
+ const pl=current-invested;
+
+ const setText=(id,v)=>{const e=$(id);if(e)e.textContent=v};
+ setText("invested",money(invested));
+ setText("current",money(current));
+ setText("count",String(list.length));
+ setText("heroValue",money(current));
+ setText("heroPL",(pl>=0?"▲ ":"▼ ")+money(Math.abs(pl))+" "+(pl>=0?"Profit":"Loss"));
+ setText("pl",money(pl));
+ if($("pl")) $("pl").className="metric "+(pl>=0?"profit":"loss");
+ setText("filterLabel",f||"All members");
+
+ const eq=list.filter(x=>x.type==="Equity").reduce((s,x)=>s+displayCurrentValue(x),0);
+ const mf=list.filter(x=>x.type==="Mutual Fund"||x.type==="Mutual Funds").reduce((s,x)=>s+displayCurrentValue(x),0);
+ const bo=list.filter(x=>x.type==="Bond / Debenture").reduce((s,x)=>s+displayCurrentValue(x),0);
+ const oth=list.filter(x=>!["Equity","Mutual Fund","Mutual Funds","Bond / Debenture"].includes(x.type)).reduce((s,x)=>s+displayCurrentValue(x),0);
+ setText("equityTotal",money(eq)); setText("mfTotal",money(mf)); setText("bondTotal",money(bo)); setText("otherTotal",money(oth));
+
+ const interestTotal=list.reduce((s,x)=>s+Number(x.interestReceived||0),0);
+ const tdsTotal=list.reduce((s,x)=>s+Number(x.tds||0),0);
+ setText("interestTotal",money(interestTotal));
+ setText("tdsTotal",money(tdsTotal));
+ setText("netInterest",money(interestTotal-tdsTotal));
+
+ const upcoming=list.filter(x=>x.maturity).map(x=>({x,days:daysUntil(x.maturity)})).filter(o=>o.days>=0).sort((a,b)=>a.days-b.days);
+ setText("maturityCount",String(upcoming.length));
+ if($("maturityList")){
+   $("maturityList").innerHTML=upcoming.slice(0,8).map(o=>{
+     const b=bondCalc(o.x), maturityVal=b?b.maturityValue:Number(o.x.value||o.x.amount||0);
+     return "<div style='padding:7px 0;border-bottom:1px solid #eee'><b>"+esc(o.x.name)+"</b> • "+fmtDate(o.x.maturity)+" • "+o.days+" days • Estimated value "+money(maturityVal)+"</div>";
+   }).join("") || "No upcoming maturities.";
+ }
+
+ const bonds=list.map(bondCalc).filter(Boolean);
+ if($("bondSummary")){
+   if(bonds.length){
+     const bp=bonds.reduce((s,b)=>s+b.principal,0);
+     const bi=bonds.reduce((s,b)=>s+b.accrued,0);
+     const bv=bonds.reduce((s,b)=>s+b.maturityValue,0);
+     const summaryParts=bonds.map(b=>b.payout+" payout "+money(b.payoutInterest));
+     $("bondSummary").innerHTML="<b>Bond Summary</b> • Principal: "+money(bp)+" • Payout interest: "+summaryParts.join(" + ")+" • Interest accrued/received to date: "+money(bi)+" • Projected maturity value incl. total interest: "+money(bv);
+   }else $("bondSummary").textContent="";
+ }
+
+ const rows=$("rows");
+ if(rows){
+   rows.innerHTML=list.length?list.map(x=>{
+     const i=db.investments.indexOf(x);
+     const d=displayCurrentValue(x)-Number(x.amount||0);
+     let extra="";
+     if(x.type==="Bond / Debenture"){
+       const b=bondCalc(x);
+       x._trackerIndex=i;
+       if(b){
+         extra="<br><span class='small'>"+esc(String(b.rate))+"% p.a. • "+esc(b.payout)+" • "+esc(b.payout)+" interest "+money(b.payoutInterest)+" • Received "+money(x.interestReceived||0)+" • TDS "+money(x.tds||0)+" • Net "+money((x.interestReceived||0)-(x.tds||0))+" • Maturity incl. interest "+money(b.maturityValue)+"</span>"+renderBondSchedule(x);
+       }
+     }
+     return "<tr><td><b>"+esc(x.name)+"</b><br><span class='small'>"+esc(x.type)+"</span>"+(x.notes?"<br><span class='small' style='color:#53657c'>📝 "+esc(x.notes)+"</span>":"")+extra+"</td><td>"+esc(x.member)+"</td><td>"+money(x.amount)+"</td><td>"+money(displayCurrentValue(x))+"</td><td class='"+(d>=0?"profit":"loss")+"'>"+money(d)+"</td><td class='actions'><button data-view='"+i+"'>View</button> <button data-edit='"+i+"'>Edit</button> <button data-delete='"+i+"'>Delete</button></td></tr>";
+   }).join(""):"<tr><td colspan='6' class='small'>No investments yet.</td></tr>";
+ }
+}
+
+let editingIndex=-1;
+
+function resetForm(){
+ editingIndex=-1;
+ $("saveBtn").textContent="Save Investment";
+ updateLivePL();
+ $("cancelEditBtn").classList.add("hide");
+ $("name").value=""; $("amount").value=""; $("value").value=""; $("date").value="";
+ $("maturity").value=""; $("notes").value=""; $("interestRate").value="";
+ $("accruedUpfront").value=""; $("interestReceived").value=""; $("tds").value="";
+ $("tdsPercent").value="";
+ calculateTDSPreview();
+ $("type").value="Equity"; $("payout").value="Monthly"; $("bondFields").classList.add("hide");
+}
+
+
+function calculateTDSPreview(){
+ const pct=Number($("tdsPercent")?.value||0);
+ const enteredInterest=Number($("interestReceived")?.value||0);
+ // If actual interest received is entered, calculate TDS on that amount.
+ // Otherwise use the current/next bond payout interest as the projected TDS base.
+ const isBond=$("type")?.value==="Bond / Debenture";
+ let baseInterest=enteredInterest;
+ if(isBond && baseInterest<=0){
+   const temp={type:"Bond / Debenture",amount:Number($("amount")?.value||0),interestRate:Number($("interestRate")?.value||0),date:$("date")?.value||"",maturity:$("maturity")?.value||"",payout:$("payout")?.value||"Quarterly"};
+   const b=bondCalc(temp);
+   if(b) baseInterest=Number(b.payoutInterest)||0;
+ }
+ const tds=(Number.isFinite(pct)&&Number.isFinite(baseInterest)&&pct>0&&baseInterest>0)?baseInterest*pct/100:0;
+ const net=Math.max(0,baseInterest-tds);
+ if($("tdsCalcAmount")) $("tdsCalcAmount").textContent=money(tds);
+ if($("tdsNetAmount")) $("tdsNetAmount").textContent="Net Interest: "+money(net);
+ const t=$("tds");
+ if(t && document.activeElement!==t) t.value=tds.toFixed(2);
+}
+
+function addInvestment(){
+ const member=$("member").value,name=$("name").value.trim(),type=$("type").value;
+ const amount=Number($("amount").value);
+ const value=$("value").value===""?amount:Number($("value").value);
+ const date=$("date").value,maturity=$("maturity").value;
+ const isBond=type==="Bond / Debenture";
+ const interestRate=isBond?Number($("interestRate").value||0):0;
+ const payout=isBond?$("payout").value:"";
+ if(!member||!name||!Number.isFinite(amount)||amount<=0){alert("Please enter Member, Investment name and a valid principal/amount.");return;}
+ if(!Number.isFinite(value)||value<0){alert("Please enter a valid current value.");return;}
+ if(isBond && (!Number.isFinite(interestRate)||interestRate<=0)){alert("Please enter the bond interest rate.");return;}
+
+ const oldItem=editingIndex>=0?db.investments[editingIndex]:null;
+ const item=Object.assign({}, oldItem||{}, {
+   member,name,type,date,amount,value,maturity,notes:$("notes").value.trim(),interestRate,payout,
+   accruedUpfront:isBond?Number($("accruedUpfront").value||0):0,
+   interestReceived:isBond?Number($("interestReceived").value||0):0,
+   tds:isBond?Number($("tds").value||0):0,
+   tdsPercent:isBond?Number($("tdsPercent").value||0):0
+ });
+ // Never drop an existing payout schedule when editing.
+ if(oldItem && Array.isArray(oldItem.payouts)) item.payouts=oldItem.payouts;
+ // Safety snapshot before replacing an existing record.
+ try{localStorage.setItem(KEY+"_preEditSafety",JSON.stringify(db));}catch(e){}
+
+ if(editingIndex>=0){
+   db.investments[editingIndex]=item;
+ }else{
+   db.investments.push(item);
+ }
+ save();
+ alert(editingIndex>=0?"Investment updated successfully.":"Investment saved successfully.");
+ resetForm();
+ document.querySelector('[data-tab="portfolio"]').click();
+}
+
+function editInvestment(i){
+ const x=db.investments[i]; if(!x)return;
+ editingIndex=i;
+ $("member").value=x.member||"";
+ $("name").value=x.name||"";
+ $("type").value=x.type||"Equity";
+ $("date").value=x.date||"";
+ $("amount").value=x.amount??"";
+ $("value").value=x.value??"";
+ $("maturity").value=x.maturity||"";
+ $("notes").value=x.notes||"";
+ $("interestRate").value=x.interestRate??"";
+ $("payout").value=x.payout||"Monthly";
+ $("accruedUpfront").value=x.accruedUpfront??"";
+ $("interestReceived").value=x.interestReceived??"";
+ $("tds").value=x.tds??"";
+ $("tdsPercent").value=x.tdsPercent??"";
+ calculateTDSPreview();
+ $("bondFields").classList.toggle("hide",x.type!=="Bond / Debenture");
+ $("saveBtn").textContent="Update Investment";
+ updateLivePL();
+ $("cancelEditBtn").classList.remove("hide");
+ document.querySelector('[data-tab="add"]').click();
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+
+
+window.openPayoutsFromHome=function(){
+ openTab("payouts");
+ if(typeof renderPayoutDashboard==="function") renderPayoutDashboard();
+}
+function renderPayoutDashboard(){
+ const el=$("payoutDashboard"); if(!el)return;
+ const bonds=db.investments.filter(x=>x.type==="Bond / Debenture");
+ if(!bonds.length){
+   el.innerHTML="<div class='portfolio-empty'>No bond/debenture investments found.</div>";
+   return;
+ }
+ const selectedMember=el.dataset.member||"";
+ const selectedStatus=el.dataset.status||"all";
+ const members=[...new Set(bonds.map(x=>x.member).filter(Boolean))];
+ const now=new Date(); now.setHours(0,0,0,0);
+ let totalScheduled=0,totalReceived=0,totalTds=0,pendingAmount=0,dueAmount=0,upcomingAmount=0;
+ let receivedCount=0,pendingCount=0,dueCount=0,upcomingCount=0,next=null,htmlOut="";
+ const cards=[];
+ bonds.forEach((x)=>{
+   // Apply member filter to calculations as well as the visible cards.
+   // Previously the cards changed, but the summary totals continued to use every member.
+   if(selectedMember && x.member!==selectedMember) return;
+   const idx=db.investments.indexOf(x), s=bondSchedule(x); if(!s)return;
+   const paid=Array.isArray(x.payouts)?x.payouts:[];
+   let rowsHtml="", bondReceived=0,bondTds=0,bondPending=0;
+   s.rows.forEach((r)=>{
+     const key=dateKey(r.date), rec=paid.find(p=>p.date===key);
+     const isPast=r.date<now, status=rec?"received":(isPast?"due":"upcoming");
+     totalScheduled+=Number(r.total||0);
+     if(rec){
+       totalReceived+=Number(rec.received||0); totalTds+=Number(rec.tds||0);
+       bondReceived+=Number(rec.received||0); bondTds+=Number(rec.tds||0); receivedCount++;
+     }else{
+       pendingAmount+=Number(r.total||0); bondPending+=Number(r.total||0); pendingCount++;
+       if(isPast){dueAmount+=Number(r.total||0);dueCount++;}else{upcomingAmount+=Number(r.total||0);upcomingCount++;}
+       if(!next || r.date<next.date) next={date:r.date,amount:r.total,final:r.final,name:x.name,member:x.member};
+     }
+     if(selectedStatus!=="all" && selectedStatus!==status)return;
+     const statusLabel=rec?"✓ Received":(isPast?"⚠ Due":"Upcoming");
+     rowsHtml+="<div class='schedule-row payout-line payout-"+status+"'><div><b>"+prettyDateObj(r.date)+"</b><span>"+(r.final?"Principal + Interest":"Interest")+" • "+r.days+" days</span>";
+     if(r.upfront>0){rowsHtml+="<small>Interest "+money(r.interest)+" + upfront accrued "+money(r.upfront)+"</small>";}
+     if(rec){rowsHtml+="<div class='payout-received'>Received "+money(rec.received)+" • TDS "+money(rec.tds||0)+" • Net "+money((Number(rec.received)||0)-(Number(rec.tds)||0))+"</div>";}
+     rowsHtml+="</div><div style='text-align:right'><strong class='"+(r.final?"maturity-pay":"interest-pay")+"'>+"+money(r.total)+"</strong><div><span class='payout-status "+(rec?"received":(isPast?"due":"pending"))+"'>"+statusLabel+"</span><br>";
+     if(rec){rowsHtml+="<button class='secondary payout-btn' data-payout-undo='"+idx+"|"+key+"'>Undo</button>";}
+     else{rowsHtml+="<button class='payout-btn' data-payout-receive='"+idx+"|"+key+"|"+Number(r.total||0).toFixed(2)+"'>Mark Received</button>";}
+     rowsHtml+="</div></div></div>";
+   });
+   if(!rowsHtml)return;
+   cards.push({x,idx,rowsHtml,bondReceived,bondTds,bondPending});
+ });
+
+ const filteredCards=cards.filter(c=>!selectedMember || c.x.member===selectedMember);
+ htmlOut=filteredCards.map(c=>{
+   const x=c.x;
+   return "<div class='card payout-card' style='margin:0 0 12px;padding:14px'>"+
+    "<div class='row'><div><b>"+esc(x.name)+"</b><div class='small'>"+esc(x.member||"")+" • "+esc(x.payout||"Monthly")+" • "+money(x.amount)+" principal</div></div><span class='pill'>Pending "+money(c.bondPending)+"</span></div>"+
+    "<div class='bond-schedule' style='margin-top:10px'>"+c.rowsHtml+"</div>"+
+    "<div class='small' style='margin-top:8px'>Received: <b>"+money(c.bondReceived)+"</b> • TDS: <b>"+money(c.bondTds)+"</b> • Net: <b>"+money(c.bondReceived-c.bondTds)+"</b></div></div>";
+ }).join("");
+
+ const nextText=next?prettyDateObj(next.date)+" • "+money(next.amount):"No pending payouts";
+ el.innerHTML=
+   "<div class='payout-filterbar'><div><b>Payout Overview</b><span>Track every scheduled payment</span></div>"+
+   "<select id='payoutMemberFilter'><option value=''>All members</option>"+members.map(m=>"<option "+(m===selectedMember?"selected":"")+">"+esc(m)+"</option>").join("")+"</select>"+
+   "<select id='payoutStatusFilter'><option value='all' "+(selectedStatus==='all'?"selected":"")+">All payouts</option><option value='upcoming' "+(selectedStatus==='upcoming'?"selected":"")+">Upcoming</option><option value='due' "+(selectedStatus==='due'?"selected":"")+">Due</option><option value='received' "+(selectedStatus==='received'?"selected":"")+">Received</option></select></div>"+
+   "<div class='grid payout-summary-grid'>"+
+   "<div class='kpi'><div class='small'>Total scheduled</div><div class='metric'>"+money(totalScheduled)+"</div></div>"+
+   "<div class='kpi green'><div class='small'>Received</div><div class='metric'>"+money(totalReceived)+"</div><div class='small'>"+receivedCount+" payouts</div></div>"+
+   "<div class='kpi amber'><div class='small'>Pending</div><div class='metric'>"+money(pendingAmount)+"</div><div class='small'>"+pendingCount+" payouts</div></div>"+
+   "<div class='kpi'><div class='small'>TDS deducted</div><div class='metric'>"+money(totalTds)+"</div></div></div>"+
+   "<div class='next-payout'><div><span>Next pending payout</span><b>"+esc(nextText)+"</b>"+(next?"<small>"+esc(next.name||"")+" • "+esc(next.member||"")+(next.final?" • Maturity":"")+"</small>":"")+"</div><div class='next-stats'><span>Due <b>"+dueCount+"</b></span><span>Upcoming <b>"+upcomingCount+"</b></span></div></div>"+
+   (htmlOut||"<div class='portfolio-empty'>No payouts match the selected filter.</div>");
+}
+
+function openTab(tab){
+ document.querySelectorAll("main section").forEach(s=>s.classList.add("hide"));
+ if($(tab)) $(tab).classList.remove("hide");
+ const subnav=$("subnav");
+ if(subnav) subnav.style.display=(tab==="home" ? "none" : "");
+ document.querySelectorAll(".tabs button,.bottom button").forEach(x=>x.classList.remove("active"));
+ document.querySelectorAll('[data-tab="'+tab+'"]').forEach(x=>x.classList.add("active"));
+ if(tab==="portfolio" && $("subnav")) $("subnav").style.display="";
+ if(tab==="payouts") renderPayoutDashboard();
+}
+document.addEventListener("click",function(e){
+ const btn=e.target.closest("[data-tab]");
+ if(btn){ e.preventDefault(); openTab(btn.dataset.tab); }
+});
+
+$("type").addEventListener("change",function(){
+ $("bondFields").classList.toggle("hide",this.value!=="Bond / Debenture");
+ if(this.value==="Bond / Debenture") $("value").value=$("amount").value;
+});
+$("amount").addEventListener("input",function(){if($("type").value==="Bond / Debenture" && !$("value").value) $("value").value=this.value;});
+$("amount").addEventListener("input",updateLivePL);
+$("value").addEventListener("input",updateLivePL);
+$("interestReceived").addEventListener("input",function(){});
+
+
+
+function maturityInfo(x){
+  if(!x || !x.maturity) return null;
+  const d=new Date(x.maturity+"T23:59:59");
+  if(Number.isNaN(d.getTime())) return null;
+  const now=new Date();
+  const days=Math.ceil((d-now)/86400000);
+  const amount=Number(x.maturityValue||x.maturityAmount||x.value||x.amount||0);
+  return {date:d,days,amount};
+}
+function renderMaturityTracker(){
+  const box=$("maturityTrackerList"), count=$("maturity90Count");
+  if(!box) return;
+  const items=(db.investments||[]).map((x,i)=>({x,i,info:maturityInfo(x)}))
+    .filter(o=>o.info && o.info.days<=90)
+    .sort((a,b)=>a.info.days-b.info.days);
+  if(count) count.textContent=items.length;
+  if(!items.length){
+    box.innerHTML='<div class="small">No investments maturing within 90 days.</div>';
+    return;
+  }
+  box.innerHTML=items.map(o=>{
+    const x=o.x, n=o.info.days;
+    const status=n<0?"Matured":n===0?"Matures today":("In "+n+" days");
+    const cls=n<0?"loss":n<=30?"loss":"profit";
+    return '<div class="kpi" style="margin:8px 0;padding:11px">'+
+      '<div class="row"><div><b>'+esc(x.name||"Investment")+'</b><div class="small">'+
+      esc(x.member||"")+' • '+esc(x.maturity||"—")+'</div></div>'+
+      '<b class="'+cls+'">'+esc(status)+'</b></div>'+
+      '<div class="small" style="margin-top:5px">Expected maturity: '+money(o.info.amount)+'</div>'+
+      '</div>';
+  }).join("");
+}
+
+function updateLivePL(){
+ const a=Number($("amount")?.value||0), v=Number($("value")?.value||0);
+ const el=$("livePLValue"), pct=$("livePLPercent");
+ if(!el||!pct) return;
+ const pl=(Number.isFinite(v)?v:0)-(Number.isFinite(a)?a:0);
+ const p=a>0?(pl/a)*100:0;
+ el.textContent=(pl>=0?"+":"-")+money(Math.abs(pl));
+ el.classList.toggle("profit",pl>=0);
+ el.classList.toggle("loss",pl<0);
+ pct.textContent=(pl>=0?"+":"")+p.toFixed(2)+"%";
+}
+
+$("interestReceived").addEventListener("input",calculateTDSPreview);
+$("tdsPercent").addEventListener("input",calculateTDSPreview);
+$("saveBtn").addEventListener("click",addInvestment);
+$("cancelEditBtn").addEventListener("click",resetForm);
+$("filterMember").addEventListener("change",render);
+$("addMemberBtn").addEventListener("click",function(){const n=$("newMember").value.trim();if(n&&!db.members.includes(n)){db.members.push(n);$("newMember").value="";save();}});
+$("memberList").addEventListener("click",function(e){const i=e.target.dataset.remove;if(i!==undefined){if(db.investments.some(x=>x.member===db.members[i])){alert("This member has investments. Delete or move them first.");return;}db.members.splice(Number(i),1);save();}});
+$("familyOverview").addEventListener("click",function(e){
+ const m=e.target.dataset.memberView;
+ if(m){
+   openTab("portfolio");
+   if($("filterMember")){ $("filterMember").value=m; render(); }
+   window.scrollTo({top:0,behavior:"smooth"});
+ }
+});
+
+$("rows").addEventListener("click",function(e){
+ const edit=e.target.dataset.edit;
+ const del=e.target.dataset.delete;
+ if(edit!==undefined){editInvestment(Number(edit));return;}
+ if(del!==undefined&&confirm("Delete this investment?")){db.investments.splice(Number(del),1);save();}
+});
+
+$("payoutDashboard").addEventListener("change",function(e){
+ if(e.target.id==="payoutMemberFilter"){this.dataset.member=e.target.value;renderPayoutDashboard();}
+ if(e.target.id==="payoutStatusFilter"){this.dataset.status=e.target.value;renderPayoutDashboard();}
+});
+
+$("payoutDashboard").addEventListener("click",function(e){
+ const receive=e.target.dataset.payoutReceive;
+ const undo=e.target.dataset.payoutUndo;
+ if(receive){
+   const parts=receive.split("|"), idx=Number(parts[0]), key=parts[1], expected=Number(parts[2])||0;
+   const x=db.investments[idx]; if(!x)return;
+   const receivedRaw=prompt("Actual amount received (₹)",String(Math.round(expected)));
+   if(receivedRaw===null)return;
+   const received=Number(receivedRaw);
+   if(!Number.isFinite(received)||received<0){alert("Please enter a valid received amount.");return;}
+   const tdsRaw=prompt("TDS deducted (₹)","0");
+   if(tdsRaw===null)return;
+   const tds=Number(tdsRaw)||0;
+   if(!Array.isArray(x.payouts))x.payouts=[];
+   x.payouts=x.payouts.filter(p=>p.date!==key);
+   x.payouts.push({date:key,expected,received,tds,receivedOn:new Date().toISOString()});
+   save(); renderPayoutDashboard(); return;
+ }
+ if(undo){
+   const parts=undo.split("|"), idx=Number(parts[0]), key=parts[1];
+   const x=db.investments[idx]; if(!x)return;
+   if(confirm("Mark this payout as pending again?")){
+     x.payouts=(Array.isArray(x.payouts)?x.payouts:[]).filter(p=>p.date!==key);
+     save(); renderPayoutDashboard();
+   }
+ }
+});
+
+$("rows").addEventListener("click",function(e){
+ const receive=e.target.dataset.receive;
+ const undo=e.target.dataset.unreceive;
+ if(receive){
+   const parts=receive.split("|"), idx=Number(parts[0]), key=parts[1], expected=Number(parts[2])||0;
+   const x=db.investments[idx]; if(!x)return;
+   const receivedRaw=prompt("Actual amount received (₹)",String(Math.round(expected)));
+   if(receivedRaw===null)return;
+   const received=Number(receivedRaw);
+   if(!Number.isFinite(received)||received<0){alert("Please enter a valid received amount.");return;}
+   const tdsRaw=prompt("TDS deducted (₹)", "0");
+   if(tdsRaw===null)return;
+   const tds=Number(tdsRaw)||0;
+   if(!Array.isArray(x.payouts))x.payouts=[];
+   x.payouts=x.payouts.filter(p=>p.date!==key);
+   x.payouts.push({date:key,expected,received,tds,receivedOn:new Date().toISOString()});
+   save();
+   return;
+ }
+ if(undo){
+   const parts=undo.split("|"), idx=Number(parts[0]), key=parts[1];
+   const x=db.investments[idx]; if(!x)return;
+   if(confirm("Mark this payout as pending again?")){
+     x.payouts=(Array.isArray(x.payouts)?x.payouts:[]).filter(p=>p.date!==key);
+     save();
+   }
+ }
+});
+function downloadJson(filename, data){
+ const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});
+ const url=URL.createObjectURL(blob);
+ const a=document.createElement("a"); a.href=url; a.download=filename;
+ document.body.appendChild(a); a.click(); a.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+const AUTH_KEY=KEY+"_auth_v1", SESSION_KEY=KEY+"_session_v1";
+function getAuth(){try{return JSON.parse(localStorage.getItem(AUTH_KEY)||"null")}catch(e){return null}}
+function setAuth(user,pass){localStorage.setItem(AUTH_KEY,JSON.stringify({user:user,pass:pass}))}
+function showLogin(){document.getElementById("loginGate").classList.remove("hide");document.getElementById("loginUser").focus()}
+function hideLogin(){document.getElementById("loginGate").classList.add("hide")}
+function initAuth(){const a=getAuth();if(!a){document.getElementById("loginFormWrap").classList.add("hide");document.getElementById("setupFormWrap").classList.remove("hide");}else if(localStorage.getItem(SESSION_KEY)==="1"){hideLogin();}else{showLogin();}}
+document.getElementById("loginBtn").addEventListener("click",function(){const a=getAuth(),u=document.getElementById("loginUser").value.trim(),p=document.getElementById("loginPass").value;if(!a){document.getElementById("loginError").textContent="Please create a login first.";return}if(u===a.user&&p===a.pass){localStorage.setItem(SESSION_KEY,"1");document.getElementById("loginError").textContent="";hideLogin();}else{document.getElementById("loginError").textContent="Username or password is incorrect.";}});
+document.getElementById("setupLoginBtn").addEventListener("click",function(){document.getElementById("loginFormWrap").classList.add("hide");document.getElementById("setupFormWrap").classList.remove("hide");document.getElementById("setupError").textContent="";});
+document.getElementById("cancelSetupBtn").addEventListener("click",function(){if(getAuth()){document.getElementById("setupFormWrap").classList.add("hide");document.getElementById("loginFormWrap").classList.remove("hide");}else{document.getElementById("setupError").textContent="Create your first login to continue.";}});
+document.getElementById("saveLoginBtn").addEventListener("click",function(){const u=document.getElementById("setupUser").value.trim(),p=document.getElementById("setupPass").value,p2=document.getElementById("setupPass2").value;if(u.length<3){document.getElementById("setupError").textContent="Username must be at least 3 characters.";return}if(p.length<4){document.getElementById("setupError").textContent="Password must be at least 4 characters.";return}if(p!==p2){document.getElementById("setupError").textContent="Passwords do not match.";return}setAuth(u,p);localStorage.setItem(SESSION_KEY,"1");document.getElementById("setupError").textContent="";hideLogin();alert("Login saved successfully.");});
+document.getElementById("logoutBtn").addEventListener("click",function(){localStorage.removeItem(SESSION_KEY);document.getElementById("loginPass").value="";showLogin();});
+
+let googleToken=null,googleTokenExpiresAt=0;
+const DRIVE_SCOPE="https://www.googleapis.com/auth/drive.file", GOOGLE_CLIENT_KEY=KEY+"_googleClientId", GOOGLE_AUTO_KEY=KEY+"_googleAutoBackup";
+function setGoogleStatus(text,ok=false){const el=$("googleStatus");if(el){el.textContent=text;el.style.color=ok?"#15803d":"#718096";}}
+function googleClientId(){return ($("googleClientId")?.value||localStorage.getItem(GOOGLE_CLIENT_KEY)||"").trim();}
+function initGoogleDrive(){const id=localStorage.getItem(GOOGLE_CLIENT_KEY)||"";$("googleClientId").value=id;const connected=!!googleToken;$("googleAutoBackup").checked=localStorage.getItem(GOOGLE_AUTO_KEY)==="1";$("googleAutoBackup").disabled=!id;const last=localStorage.getItem(KEY+"_lastDriveBackup");$("googleLastBackup").textContent=last?"Last backup: "+new Date(last).toLocaleString():"";setGoogleStatus(id?"Ready • tap Connect Google Account":"Google Drive setup required once");}
+function ensureGoogleReady(){if(!googleClientId()){alert("Enter your Google OAuth Client ID first.");return false;}if(!window.google?.accounts?.oauth2){alert("Google sign-in is still loading. Please wait and try again.");return false;}return true;}
+function connectGoogleDrive(){if(!ensureGoogleReady())return;const id=googleClientId();localStorage.setItem(GOOGLE_CLIENT_KEY,id);const c=google.accounts.oauth2.initTokenClient({client_id:id,scope:DRIVE_SCOPE,callback:r=>{if(r.error){setGoogleStatus("Connection cancelled or failed");return;}googleToken=r.access_token;googleTokenExpiresAt=Date.now()+((r.expires_in||3600)-60)*1000;$("googleBackupBtn").disabled=false;$("googleAutoBackup").disabled=false;setGoogleStatus("Google Drive connected ✓",true);}});c.requestAccessToken({prompt:"consent"});}
+async function getGoogleToken(){if(googleToken&&Date.now()<googleTokenExpiresAt)return googleToken;if(!ensureGoogleReady())return null;const id=googleClientId();localStorage.setItem(GOOGLE_CLIENT_KEY,id);return await new Promise(resolve=>{const c=google.accounts.oauth2.initTokenClient({client_id:id,scope:DRIVE_SCOPE,callback:r=>{if(r.error){setGoogleStatus("Google authorization is required");resolve(null);return;}googleToken=r.access_token;googleTokenExpiresAt=Date.now()+((r.expires_in||3600)-60)*1000;$("googleBackupBtn").disabled=false;$("googleAutoBackup").disabled=false;setGoogleStatus("Google Drive connected ✓",true);resolve(googleToken);}});c.requestAccessToken({prompt:""});});}
+function currentBackup(){return{app:"Mohan Family Investment",backupVersion:2,exportedAt:new Date().toISOString(),data:JSON.parse(JSON.stringify(db))};}
+async function uploadBackupToDrive(showAlert=false){const token=await getGoogleToken();if(!token)return false;try{const q=encodeURIComponent("name = 'mohan-family-investment-backup.json' and trashed = false");const sr=await fetch("https://www.googleapis.com/drive/v3/files?q="+q+"&spaces=drive&fields=files(id,name)",{headers:{Authorization:"Bearer "+token}});if(!sr.ok)throw 0;const files=(await sr.json()).files||[];const blob=new Blob([JSON.stringify(currentBackup(),null,2)],{type:"application/json"});const b="-------mohan"+Date.now();const meta=JSON.stringify({name:"mohan-family-investment-backup.json",description:"Mohan Family Investment automatic backup"});const body=new Blob(["--"+b+"\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n"+meta+"\r\n--"+b+"\r\nContent-Type: application/json\r\n\r\n",blob,"\r\n--"+b+"--"],{type:"multipart/related; boundary="+b});let url="https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&fields=id,name,modifiedTime",method="POST";if(files[0]){url="https://www.googleapis.com/upload/drive/v3/files/"+files[0].id+"?uploadType=multipart&fields=id,name,modifiedTime";method="PATCH";}const res=await fetch(url,{method,headers:{Authorization:"Bearer "+token,"Content-Type":"multipart/related; boundary="+b},body});if(!res.ok)throw 0;localStorage.setItem(KEY+"_lastDriveBackup",new Date().toISOString());$("googleLastBackup").textContent="Last backup: "+new Date().toLocaleString();setGoogleStatus("Google Drive backup complete ✓",true);if(showAlert)alert("Backup saved to Google Drive successfully.");return true;}catch(e){setGoogleStatus("Drive backup failed • local data is safe");if(showAlert)alert("Google Drive backup failed. Your local data is safe.\n\nPlease reconnect and try again.");return false;}}
+
+function validInvestment(x){
+ return x && typeof x==="object" && typeof x.name==="string" && typeof x.member==="string" &&
+        typeof x.type==="string" && Number.isFinite(Number(x.amount)) && Number.isFinite(Number(x.value));
+}
+function validateBackup(x){
+ const data=x && x.data ? x.data : x;
+ return data && Array.isArray(data.members) && Array.isArray(data.investments) &&
+        data.members.every(m=>typeof m==="string") &&
+        data.investments.every(validInvestment);
+}
+$("exportBtn").addEventListener("click",function(){
+ const backup={
+   app:"Mohan Family Investment",
+   backupVersion:2,
+   exportedAt:new Date().toISOString(),
+   data:JSON.parse(JSON.stringify(db))
+ };
+ try{localStorage.setItem(KEY+"_lastBackup",JSON.stringify(backup));}catch(e){}
+ downloadJson("mohan-family-investment-backup.json",backup);
+ alert("Backup downloaded successfully.\nKeep this file safely in Google Drive or another secure location.");
+});
+$("restoreFile").addEventListener("change",function(e){
+ const f=e.target.files[0]; if(!f)return;
+ const r=new FileReader();
+ r.onload=function(){
+   try{
+     const parsed=JSON.parse(r.result);
+     if(!validateBackup(parsed)) throw new Error("invalid");
+     const incoming=parsed.data||parsed;
+     const investmentCount=incoming.investments.length;
+     const memberCount=incoming.members.length;
+     const when=parsed.exportedAt ? new Date(parsed.exportedAt).toLocaleString() : "older backup";
+     if(!confirm("Restore this backup?\n\nMembers: "+memberCount+
+                 "\nInvestments: "+investmentCount+
+                 "\nBackup date: "+when+
+                 "\n\nYour current data will first be saved as a safety copy.")) return;
+
+     const safety={
+       app:"Mohan Family Investment",
+       backupVersion:2,
+       createdAt:new Date().toISOString(),
+       reason:"Before restore",
+       data:JSON.parse(JSON.stringify(db))
+     };
+     try{localStorage.setItem(KEY+"_preRestore",JSON.stringify(safety));}catch(e){}
+
+     db=JSON.parse(JSON.stringify(incoming));
+     save();
+     $("restoreFile").value="";
+     alert("Backup restored successfully.\nYour previous data is also kept as a safety copy on this browser.");
+     openTab("home");
+   }catch(err){
+     $("restoreFile").value="";
+     alert("Invalid or damaged backup file. No data was changed.");
+   }
+ };
+ r.readAsText(f);
+});
+$("clearBtn").addEventListener("click",function(){
+ if(!confirm("Delete ALL local investment data?\n\nThis cannot be undone from the app.")) return;
+ if(!confirm("Final confirmation: permanently delete all members, investments and payout records?")) return;
+ try{
+   localStorage.removeItem(KEY);
+   localStorage.removeItem(KEY+"_lastSave");
+   localStorage.removeItem(KEY+"_lastBackup");
+   localStorage.removeItem(KEY+"_preRestore");
+ }catch(e){}
+ location.reload();
+});
+$("googleClientId").addEventListener("change",function(){localStorage.setItem(GOOGLE_CLIENT_KEY,this.value.trim());setGoogleStatus(this.value.trim()?"Client ID saved • click Connect Google Drive":"Not connected");});
+$("googleConnectBtn").addEventListener("click",connectGoogleDrive);
+$("googleBackupBtn").addEventListener("click",function(){uploadBackupToDrive(true);});
+$("googleAutoBackup").addEventListener("change",function(){localStorage.setItem(GOOGLE_AUTO_KEY,this.checked?"1":"0");});
+initGoogleDrive();
+initAuth();
+load();render();openTab("home");
+})();
+</script>
+<div class="bottom"><div class="bottom-inner">
+<button data-tab="home" class="active">⌂<br>Home</button>
+<button data-tab="portfolio">▣<br>Investments</button>
+<button data-tab="add">＋<br>Add</button>
+<button data-tab="members">☻<br>Family</button>
+<button data-tab="backup">↻<br>Backup</button>
+</div></div>
+</body>
+</html>
